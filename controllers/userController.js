@@ -80,7 +80,7 @@ const loginUser=asyncHandler(async(req,res)=>{
 
 //@desc current user info
 //@route GET api/user/current
-//@access private
+//@access public
 const currentUser=asyncHandler(async(req,res)=>{
     // const user=await User.find();
     res.json(req.user);
